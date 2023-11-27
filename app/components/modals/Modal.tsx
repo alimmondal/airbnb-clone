@@ -8,11 +8,11 @@ import Button from "../Button";
 interface ModalProps {
   isOpen?: boolean;
   onClose: () => void;
-  onSubmit?: () => void | undefined;
+  onSubmit: () => void;
   title?: string;
   body?: React.ReactElement;
   footer?: React.ReactElement;
-  actionLabel?: string;
+  actionLabel: string;
   disabled?: boolean;
   secondaryAction?: () => void;
   secondaryActionLabel?: string;
@@ -48,9 +48,10 @@ const Modal: React.FC<ModalProps> = ({
   }, [onClose, disabled]);
 
   const handleSubmit = useCallback(() => {
-    if (disabled || !onSubmit) {
+    if (disabled) {
       return;
     }
+
     onSubmit();
   }, [onSubmit, disabled]);
 
@@ -130,7 +131,7 @@ const Modal: React.FC<ModalProps> = ({
                 className="
                 flex 
                 items-center 
-                p-2
+                p-6
                 rounded-t
                 justify-center
                 relative
@@ -152,10 +153,8 @@ const Modal: React.FC<ModalProps> = ({
                 </button>
                 <div className="text-lg font-semibold">{title}</div>
               </div>
-
               {/*body*/}
               <div className="relative p-6 flex-auto">{body}</div>
-
               {/*footer*/}
               <div className="flex flex-col gap-2 p-6">
                 <div
@@ -175,13 +174,11 @@ const Modal: React.FC<ModalProps> = ({
                       outline
                     />
                   )}
-                  {actionLabel && (
-                    <Button
-                      disabled={disabled}
-                      label={actionLabel}
-                      onClick={handleSubmit}
-                    />
-                  )}
+                  <Button
+                    disabled={disabled}
+                    label={actionLabel}
+                    onClick={handleSubmit}
+                  />
                 </div>
                 {footer}
               </div>
