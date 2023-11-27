@@ -18,7 +18,7 @@ interface ModalProps {
   secondaryActionLabel?: string;
 }
 
-const Modal: React.FC<ModalProps> = ({
+const FModal: React.FC<ModalProps> = ({
   isOpen,
   onClose,
   onSubmit,
@@ -87,14 +87,15 @@ const Modal: React.FC<ModalProps> = ({
           className="
           relative 
           w-full
-          md:w-4/6
-          lg:w-3/6
-          xl:w-2/5
+          md:w-w-full
+          lg:w-full
+          xl:w-full
           my-6
           mx-auto 
           h-full 
-          lg:h-auto
-          md:h-auto
+          lg:h-1/5
+          xl:h-1/5
+          md:h-1/5                        
           "
         >
           {/*content*/}
@@ -134,21 +135,21 @@ const Modal: React.FC<ModalProps> = ({
                 rounded-t
                 justify-center
                 relative
-                border-b-[1px]
+
                 "
               >
                 <button
                   className="
-                    p-1
+                    p-4
                     border-0 
                     hover:opacity-70
                     transition
                     absolute
-                    left-9
+                    left-2
                   "
                   onClick={handleClose}
                 >
-                  <IoMdClose size={18} />
+                  <IoMdClose size={24} />
                 </button>
                 <div className="text-lg font-semibold">{title}</div>
               </div>
@@ -193,4 +194,4 @@ const Modal: React.FC<ModalProps> = ({
   );
 };
 
-export default Modal;
+export default FModal;
