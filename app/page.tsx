@@ -1,16 +1,14 @@
 import Container from "@/app/components/Container";
-import ListingCard from "@/app/components/listings/ListingCard";
 import EmptyState from "@/app/components/EmptyState";
+import ListingCard from "@/app/components/listings/ListingCard";
 
-import getListings, { 
-  IListingsParams
-} from "@/app/actions/getListings";
 import getCurrentUser from "@/app/actions/getCurrentUser";
+import getListings, { IListingsParams } from "@/app/actions/getListings";
 import ClientOnly from "./components/ClientOnly";
 
 interface HomeProps {
-  searchParams: IListingsParams
-};
+  searchParams: IListingsParams;
+}
 
 const Home = async ({ searchParams }: HomeProps) => {
   const listings = await getListings(searchParams);
@@ -27,7 +25,7 @@ const Home = async ({ searchParams }: HomeProps) => {
   return (
     <ClientOnly>
       <Container>
-        <div 
+        <div
           className="
             pt-24
             grid 
@@ -35,7 +33,7 @@ const Home = async ({ searchParams }: HomeProps) => {
             sm:grid-cols-2 
             md:grid-cols-3 
             lg:grid-cols-4
-            xl:grid-cols-5
+            xl:grid-cols-4
             2xl:grid-cols-6
             gap-8
           "
@@ -50,7 +48,7 @@ const Home = async ({ searchParams }: HomeProps) => {
         </div>
       </Container>
     </ClientOnly>
-  )
-}
+  );
+};
 
 export default Home;

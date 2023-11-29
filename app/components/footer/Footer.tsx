@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { AiOutlineDown } from "react-icons/ai";
 
@@ -13,22 +12,28 @@ const FooterComponent = () => {
         <Container>
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
             <ul className="flex gap-3 list-disc">
-              <li>
-                <a href="">&copy; {new Date().getFullYear()} </a>
-              </li>
-
-              <li className="hover:underline mx-3">
+              <li className="hover:underline  sm:visible lg:visible md:visible xl:visible 2xl:visible text-base">
                 <a href="https://itroomab.com" target="_blank">
-                  Created by alim
+                  &copy; {new Date().getFullYear()} Alim, Inc.
                 </a>
               </li>
-              <li className="hover:underline">
+
+              {/* <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm mx-3">
+                <a href="https://itroomab.com" target="_blank">
+                  Terms
+                </a>
+              </li>
+              <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm">
                 <a href="/privacy">Privacy</a>
               </li>
+              <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm ml-3">
+                <a href="/privacy">Your Privacy Choice</a>
+              </li> */}
             </ul>
+
             <div
               onClick={footerModal.onOpen}
-              className="flex flex-row items-center gap-1 hover:underline cursor-pointer"
+              className="flex flex-row items-center gap-1 hover:underline cursor-pointer text-base"
             >
               Support & resource
               <span>

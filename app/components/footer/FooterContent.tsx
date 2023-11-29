@@ -8,87 +8,94 @@ const FooterContent = () => {
       className="
             grid 
             grid-cols-1 
-            sm:grid-cols-2 
+            sm:grid-cols-2
             md:grid-cols-3 
             lg:grid-cols-3
             xl:grid-cols-3
             2xl:grid-cols-3
-            gap-40
-            p-10
+            gap-4
+            sm:gap-20
+            md:gap-4
+            lg:gap-40
+            xl:gap-40
+            2xl:gap-40
+            sm:p-1
+            md:p-9
+            lg:p-10
           "
     >
       <div className="">
         <h1 className="font-bold mb-1">Support</h1>
-        <ul className="">
-          <li>
-            <a href="">Help Center</a>
+        <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Help Center</a>
           </li>
-          <li>
-            <a href="">Get Help with a safety issue</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Get Help with a safety issue</a>
           </li>
-          <li>
-            <a href="">Air Cover</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Air Cover</a>
           </li>
-          <li>
-            <a href="">Anti-discrimination</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Anti-discrimination</a>
           </li>
-          <li>
-            <a href="">Disability support</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Disability support</a>
           </li>
-          <li>
-            <a href="">Cancellation options</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Cancellation options</a>
           </li>
-          <li>
-            <a href="">Report neighborhood concern</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Report neighborhood concern</a>
           </li>
         </ul>
       </div>
       <div className="">
         <h1 className="font-bold mb-1">Hosting</h1>
-        <ul>
-          <li>
-            <a href="">Airbnb your home</a>
+        <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Airbnb your home</a>
           </li>
-          <li>
-            <a href="">AirCover for Hosts</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">AirCover for Hosts</a>
           </li>
-          <li>
-            <a href="">Hosting resources</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Hosting resources</a>
           </li>
-          <li>
-            <a href="">Community forum</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Community forum</a>
           </li>
-          <li>
-            <a href="">Hosting responsibly</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Hosting responsibly</a>
           </li>
-          <li>
-            <a href="">Airbnb-friendly apartments</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Airbnb-friendly apartments</a>
           </li>
         </ul>
       </div>
       <div className="">
         <h1 className="font-bold mb-1">Airbnb</h1>
-        <ul>
-          <li>
-            <a href="">News-room</a>
+        <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
+          <li className="hover:underline">
+            <a href="https://itroomab.com">News-room</a>
           </li>
-          <li>
-            <a href="">Get Help with a safety issue</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Get Help with a safety issue</a>
           </li>
-          <li>
-            <a href="">New features</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">New features</a>
           </li>
-          <li>
-            <a href="">Careers</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Careers</a>
           </li>
-          <li>
-            <a href="">Investors</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Investors</a>
           </li>
-          <li>
-            <a href="">Gift cards</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Gift cards</a>
           </li>
-          <li>
-            <a href="">Airbnb.org emergency stays</a>
+          <li className="hover:underline">
+            <a href="https://itroomab.com">Airbnb.org emergency stays</a>
           </li>
         </ul>
       </div>

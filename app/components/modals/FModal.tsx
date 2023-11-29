@@ -95,7 +95,8 @@ const FModal: React.FC<ModalProps> = ({
           h-full 
           lg:h-1/5
           xl:h-1/5
-          md:h-1/5                        
+          md:h-1/6
+          sm:h-full                       
           "
         >
           {/*content*/}
@@ -115,7 +116,7 @@ const FModal: React.FC<ModalProps> = ({
               lg:h-auto
               md:h-auto
               border-0 
-              rounded-lg 
+              rounded-t-lg 
               shadow-lg 
               relative 
               flex 
