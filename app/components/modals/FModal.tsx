@@ -1,8 +1,9 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
+import { useHover } from "@/app/hooks/useHover";
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
-
 import Button from "../Button";
 
 interface ModalProps {
@@ -30,6 +31,7 @@ const FModal: React.FC<ModalProps> = ({
   secondaryAction,
   secondaryActionLabel,
 }) => {
+  const { isHovered, bind } = useHover();
   const [showModal, setShowModal] = useState(isOpen);
 
   useEffect(() => {
@@ -140,14 +142,16 @@ const FModal: React.FC<ModalProps> = ({
                 "
               >
                 <button
-                  className="
+                  className={`
                     p-4
                     border-0 
                     hover:opacity-70
                     transition
                     absolute
                     left-2
-                  "
+                     ${isHovered ? "rotate-90" : ""}
+                  `}
+                  {...bind}
                   onClick={handleClose}
                 >
                   <IoMdClose size={24} />

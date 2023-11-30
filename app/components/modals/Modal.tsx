@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { IoMdClose } from "react-icons/io";
 
+import { useHover } from "@/app/hooks/useHover";
 import Button from "../Button";
 
 interface ModalProps {
@@ -30,6 +31,7 @@ const Modal: React.FC<ModalProps> = ({
   secondaryAction,
   secondaryActionLabel,
 }) => {
+  const { isHovered, bind } = useHover();
   const [showModal, setShowModal] = useState(isOpen);
 
   useEffect(() => {
@@ -136,17 +138,20 @@ const Modal: React.FC<ModalProps> = ({
                 justify-center
                 relative
                 border-b-[1px]
+                
                 "
               >
                 <button
-                  className="
+                  className={`
                     p-1
                     border-0 
                     hover:opacity-70
                     transition
                     absolute
                     left-9
-                  "
+                    hover:scale-110
+                    ${isHovered ? "rotate-90" : ""}`}
+                  {...bind}
                   onClick={handleClose}
                 >
                   <IoMdClose size={18} />
