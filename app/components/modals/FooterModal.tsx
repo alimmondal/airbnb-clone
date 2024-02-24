@@ -12,7 +12,7 @@ const FooterModal = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const bodyContent = (
-    <div className="flex ">
+    <div className="w-full h-full flex items-center justify-center">
       <div className="">
         <FooterContent />
       </div>
@@ -23,7 +23,6 @@ const FooterModal = () => {
     <FModal
       disabled={isLoading}
       isOpen={footerModal.isOpen}
-      // title="Login"
       onClose={footerModal.onClose}
       body={bodyContent}
       // footer={footerContent}

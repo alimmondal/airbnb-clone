@@ -19,34 +19,31 @@ const FooterContent = () => {
             lg:gap-40
             xl:gap-40
             2xl:gap-40
-            sm:p-1
-            md:p-9
-            lg:p-10
           "
     >
       <div className="">
         <h1 className="font-bold mb-1">Support</h1>
         <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
           <li className="hover:underline">
-            <a href="https://itroomab.com">Help Center</a>
+            <a href="#">Help Center</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Get Help with a safety issue</a>
+            <a href="#">Get Help with a safety issue</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Air Cover</a>
+            <a href="#">Air Cover</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Anti-discrimination</a>
+            <a href="#">Anti-discrimination</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Disability support</a>
+            <a href="#">Disability support</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Cancellation options</a>
+            <a href="#">Cancellation options</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Report neighborhood concern</a>
+            <a href="#">Report neighborhood concern</a>
           </li>
         </ul>
       </div>
@@ -54,22 +51,22 @@ const FooterContent = () => {
         <h1 className="font-bold mb-1">Hosting</h1>
         <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
           <li className="hover:underline">
-            <a href="https://itroomab.com">Airbnb your home</a>
+            <a href="#">Airbnb your home</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">AirCover for Hosts</a>
+            <a href="#">AirCover for Hosts</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Hosting resources</a>
+            <a href="#">Hosting resources</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Community forum</a>
+            <a href="#">Community forum</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Hosting responsibly</a>
+            <a href="#">Hosting responsibly</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Airbnb-friendly apartments</a>
+            <a href="#">Airbnb-friendly apartments</a>
           </li>
         </ul>
       </div>
@@ -77,25 +74,25 @@ const FooterContent = () => {
         <h1 className="font-bold mb-1">Airbnb</h1>
         <ul className="lg:text-base md:tex-base sm:text:sm text-xs">
           <li className="hover:underline">
-            <a href="https://itroomab.com">News-room</a>
+            <a href="#">News-room</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Get Help with a safety issue</a>
+            <a href="#">Get Help with a safety issue</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">New features</a>
+            <a href="#">New features</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Careers</a>
+            <a href="#">Careers</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Investors</a>
+            <a href="#">Investors</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Gift cards</a>
+            <a href="#">Gift cards</a>
           </li>
           <li className="hover:underline">
-            <a href="https://itroomab.com">Airbnb.org emergency stays</a>
+            <a href="#">Airbnb.org emergency stays</a>
           </li>
         </ul>
       </div>

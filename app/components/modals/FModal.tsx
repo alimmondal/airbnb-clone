@@ -77,33 +77,34 @@ const FModal: React.FC<ModalProps> = ({
           flex 
           overflow-x-hidden 
           overflow-y-auto 
-          fixed 
-          inset-0 
-          z-50 
+          fixed
+          bottom-0
+          right-0
+          w-full 
+          z-50
           outline-none 
           focus:outline-none
-          bg-neutral-800/70
+
         "
       >
         <div
           className="
           relative 
           w-full
-          md:w-w-full
-          lg:w-full
-          xl:w-full
-          my-6
           mx-auto 
           h-full 
           lg:h-1/5
           xl:h-1/5
           md:h-1/6
-          sm:h-full                       
+          overflow-hidden
+               
           "
         >
           {/*content*/}
           <div
             className={`
+            border-t-[1px]
+            rounded-t
             translate
             duration-300
             h-full
@@ -134,11 +135,10 @@ const FModal: React.FC<ModalProps> = ({
                 className="
                 flex 
                 items-center 
-                p-2
+                p-4
                 rounded-t
                 justify-center
                 relative
-
                 "
               >
                 <button

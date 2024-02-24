@@ -13,22 +13,10 @@ const FooterComponent = () => {
           <div className="flex flex-row items-center justify-between gap-3 md:gap-0">
             <ul className="flex gap-3 list-disc">
               <li className="hover:underline  sm:visible lg:visible md:visible xl:visible 2xl:visible text-base">
-                <a href="https://itroomab.com" target="_blank">
+                <a href="" target="_blank">
                   &copy; {new Date().getFullYear()} Alim, Inc.
                 </a>
               </li>
-
-              {/* <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm mx-3">
-                <a href="https://itroomab.com" target="_blank">
-                  Terms
-                </a>
-              </li>
-              <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm">
-                <a href="/privacy">Privacy</a>
-              </li>
-              <li className="hover:underline invisible sm:visible lg:visible md:visible xl:visible 2xl:visible text-sm ml-3">
-                <a href="/privacy">Your Privacy Choice</a>
-              </li> */}
             </ul>
 
             <div
